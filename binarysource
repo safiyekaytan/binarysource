@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="tr">
+    <head>
+
+    </head>
+    <body>
+        <script>
+            //ikili arama algoritmasi
+var sayi = window.prompt("Dizi eleman sayisini gir "); //girilen sayinin tabanini al
+var i;
+var k=0;
+var c;
+var dizi=[];
+for(i=0; i<sayi; i++)
+{
+dizi[i]=window.prompt("eleman gir");
+}
+var aranan=window.prompt("aranan elemani gir  ");
+for(i=0; i<sayi; i++)
+{
+    if(aranan==dizi[i])
+    {
+      k++;
+      c=i;
+
+    }
+}
+if(k==0)
+{
+ 
+alert("Aranan eleman bulunamadi");
+}
+else if(k!=0)
+{
+    alert("Aranan eleman bulundu, indisi: "+c);
+
+}
+        </script>
+
+    </body>
+
+</html>
